@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <img src="{{ asset('img/chat-logo.webp') }}" width="100px" alt="Laravel Chat by Riki Hermawan">
             </a>
         </x-slot>
 
@@ -14,7 +14,7 @@
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
-
+            <p class="text-center fw-bold mb-3" style="font-size: 30px;">LOGIN</p>
             <!-- Email Address -->
             <div>
                 <x-label for="email" :value="__('Email')" />
